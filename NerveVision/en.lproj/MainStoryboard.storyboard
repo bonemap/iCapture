@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sdc-qc-qwh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZY3-Eq-mpN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0M8-YC-AEj" appends="YES" id="lSK-Fq-cWS"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="3" id="WlG-NE-BSY"/>
+                        <outlet property="swipeGesture" destination="0M8-YC-AEj" id="WzN-KG-iis"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="0M8-YC-AEj">
+                    <connections>
+                        <segue destination="6" kind="modal" identifier="showSetup" modalTransitionStyle="coverVertical" id="qJ1-OT-M98"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-51" y="182"/>
+        </scene>
+        <!--Flipside View Controller-->
+        <scene sceneID="9">
+            <objects>
+                <viewController storyboardIdentifier="FlipsideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6" customClass="FlipsideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7al-dq-8nR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rp4-WX-VRf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Settings" id="13">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="14">
+                                            <connections>
+                                                <action selector="done:" destination="6" id="16"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NKL-zQ-h6u" userLabel="NetworkSwitch">
+                                <rect key="frame" x="219" y="80" width="51" height="31"/>
+                                <connections>
+                                    <action selector="networkSwitchPressed:" destination="6" eventType="valueChanged" id="FY8-Wc-8LK"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Send To:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPl-kQ-ThR">
+                                <rect key="frame" x="20" y="81" width="81" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="DBS-Hg-oaT"/>
+                                    <constraint firstAttribute="height" constant="27" id="KJ4-mE-qtE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1o6-mr-fxG" userLabel="VideoSwitch">
+                                <rect key="frame" x="219" y="161" width="51" height="31"/>
+                                <connections>
+                                    <action selector="videoCaptureSwitchPressed:" destination="6" eventType="valueChanged" id="vPC-sS-aAR"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Video Capture:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLd-Kk-o3P">
+                                <rect key="frame" x="20" y="159" width="191" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="z2I-Zu-OG8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Status Log:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEO-wK-iQl">
+                                <rect key="frame" x="20" y="200" width="191" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="hAx-Rd-TAu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="actor1" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="JOh-QT-9ks">
+                                <rect key="frame" x="109" y="80" width="102" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="02d-9b-iMW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6" id="auA-Rp-oKZ"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYw-1A-NBe" userLabel="Network Status View" customClass="StatusView">
+                                <rect key="frame" x="20" y="241" width="280" height="219"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="hTU-MS-aFg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1o6-mr-fxG" firstAttribute="bottom" secondItem="KLd-Kk-o3P" secondAttribute="bottom" id="6N4-v6-PRb"/>
+                            <constraint firstItem="NKL-zQ-h6u" firstAttribute="leading" secondItem="JOh-QT-9ks" secondAttribute="trailing" constant="8" symbolic="YES" id="6yN-gX-XlI"/>
+                            <constraint firstItem="JOh-QT-9ks" firstAttribute="top" secondItem="7" secondAttribute="top" constant="80" id="AOl-8u-X7c"/>
+                            <constraint firstItem="NKL-zQ-h6u" firstAttribute="leading" secondItem="1o6-mr-fxG" secondAttribute="leading" id="F60-65-HSj"/>
+                            <constraint firstAttribute="trailing" secondItem="LYw-1A-NBe" secondAttribute="trailing" constant="20" symbolic="YES" id="HZb-Vk-yR0"/>
+                            <constraint firstItem="fEO-wK-iQl" firstAttribute="top" secondItem="KLd-Kk-o3P" secondAttribute="bottom" constant="8" symbolic="YES" id="Heu-uE-O7f"/>
+                            <constraint firstItem="tPl-kQ-ThR" firstAttribute="baseline" secondItem="JOh-QT-9ks" secondAttribute="baseline" id="KOA-Wd-w48"/>
+                            <constraint firstItem="NKL-zQ-h6u" firstAttribute="top" secondItem="JOh-QT-9ks" secondAttribute="top" id="MZO-uP-r0P"/>
+                            <constraint firstItem="LYw-1A-NBe" firstAttribute="top" secondItem="fEO-wK-iQl" secondAttribute="bottom" constant="8" symbolic="YES" id="OMS-4z-YO9"/>
+                            <constraint firstItem="JOh-QT-9ks" firstAttribute="leading" secondItem="tPl-kQ-ThR" secondAttribute="trailing" constant="8" symbolic="YES" id="XvR-pq-RFd"/>
+                            <constraint firstItem="fEO-wK-iQl" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" id="azq-gE-Jur"/>
+                            <constraint firstItem="tPl-kQ-ThR" firstAttribute="top" secondItem="7" secondAttribute="top" constant="81" id="gOL-kD-xUR"/>
+                            <constraint firstItem="JOh-QT-9ks" firstAttribute="centerX" secondItem="12" secondAttribute="centerX" id="iY3-AW-2ZI"/>
+                            <constraint firstItem="12" firstAttribute="leading" secondItem="7" secondAttribute="leading" id="kyL-VC-rMY"/>
+                            <constraint firstItem="1o6-mr-fxG" firstAttribute="leading" secondItem="KLd-Kk-o3P" secondAttribute="trailing" constant="8" symbolic="YES" id="mof-lt-Dq7"/>
+                            <constraint firstItem="12" firstAttribute="top" secondItem="7" secondAttribute="top" id="oQ7-QK-1Ab"/>
+                            <constraint firstItem="1o6-mr-fxG" firstAttribute="leading" secondItem="fEO-wK-iQl" secondAttribute="trailing" constant="8" symbolic="YES" id="oou-L2-INf"/>
+                            <constraint firstItem="tPl-kQ-ThR" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" id="rpe-Ow-s56"/>
+                            <constraint firstItem="KLd-Kk-o3P" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" id="wbz-Yr-Dv1"/>
+                            <constraint firstItem="12" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="yf5-Bx-wHg"/>
+                            <constraint firstItem="LYw-1A-NBe" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" id="yrh-q4-A0x"/>
+                            <constraint firstAttribute="bottom" secondItem="LYw-1A-NBe" secondAttribute="bottom" constant="20" symbolic="YES" id="yz1-m0-8XB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="networkSwitch" destination="NKL-zQ-h6u" id="LbN-vn-5ru"/>
+                        <outlet property="serviceIDField" destination="JOh-QT-9ks" id="Yzn-6z-Nkp"/>
+                        <outlet property="statusDisplay" destination="LYw-1A-NBe" id="kDN-Zj-TkD"/>
+                        <outlet property="titleItem" destination="13" id="Thm-XE-Jbq"/>
+                        <outlet property="videoCaptureSwitch" destination="1o6-mr-fxG" id="ByG-A9-MAQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="182"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

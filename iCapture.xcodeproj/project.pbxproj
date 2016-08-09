@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F11E58D16527D01007328C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F11E58C16527D01007328C1 /* UIKit.framework */; };
+		8F11E58F16527D01007328C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F11E58E16527D01007328C1 /* Foundation.framework */; };
+		8F11E59116527D01007328C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F11E59016527D01007328C1 /* CoreGraphics.framework */; };
+		8F11E59716527D01007328C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F11E59516527D01007328C1 /* InfoPlist.strings */; };
+		8F11E59916527D01007328C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F11E59816527D01007328C1 /* main.m */; };
+		8F11E59D16527D01007328C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F11E59C16527D01007328C1 /* AppDelegate.m */; };
+		8F11E5A316527D02007328C1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F11E5A216527D02007328C1 /* Default-568h@2x.png */; };
+		8F11E5A616527D02007328C1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F11E5A416527D02007328C1 /* MainStoryboard.storyboard */; };
+		8F11E5A916527D02007328C1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F11E5A816527D02007328C1 /* MainViewController.m */; };
+		8F11E5AC16527D02007328C1 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F11E5AB16527D02007328C1 /* FlipsideViewController.m */; };
+		8F11E5BB16533B5A007328C1 /* NetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F11E5BA16533B5A007328C1 /* NetworkHandler.m */; };
+		8F11E5BE16533B7F007328C1 /* ImageCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F11E5BD16533B7F007328C1 /* ImageCapture.m */; };
+		8F11E5D1165626BA007328C1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F11E5D0165626BA007328C1 /* AVFoundation.framework */; };
+		8F11E5D3165626D3007328C1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F11E5D2165626D3007328C1 /* CoreVideo.framework */; };
+		8F11E5D61656305D007328C1 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F11E5D51656305D007328C1 /* Status.m */; };
+		8F11E5DD16575DE2007328C1 /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F11E5DC16575DE2007328C1 /* StatusView.m */; };
+		8FC548721658872500BD93AA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC548711658872500BD93AA /* CoreMedia.framework */; };
+		8FD25F3F16639154009ACE86 /* icapture_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD25F3E16639154009ACE86 /* icapture_icon_57.png */; };
+		8FD25F4116639168009ACE86 /* icapture_icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD25F4016639167009ACE86 /* icapture_icon_114.png */; };
+		8FD25F431663918D009ACE86 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD25F421663918D009ACE86 /* Default@2x.png */; };
+		8FD25F47166391FE009ACE86 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FD25F46166391FE009ACE86 /* Default.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F11E58816527D01007328C1 /* iCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F11E58C16527D01007328C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8F11E58E16527D01007328C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8F11E59016527D01007328C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F11E59416527D01007328C1 /* iCapture-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCapture-Info.plist"; sourceTree = "<group>"; };
+		8F11E59616527D01007328C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8F11E59816527D01007328C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F11E59A16527D01007328C1 /* iCapture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCapture-Prefix.pch"; sourceTree = "<group>"; };
+		8F11E59B16527D01007328C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F11E59C16527D01007328C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F11E5A216527D02007328C1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8F11E5A516527D02007328C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8F11E5A716527D02007328C1 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8F11E5A816527D02007328C1 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8F11E5AA16527D02007328C1 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		8F11E5AB16527D02007328C1 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		8F11E5B916533B5A007328C1 /* NetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHandler.h; sourceTree = "<group>"; };
+		8F11E5BA16533B5A007328C1 /* NetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHandler.m; sourceTree = "<group>"; };
+		8F11E5BC16533B7F007328C1 /* ImageCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCapture.h; sourceTree = "<group>"; };
+		8F11E5BD16533B7F007328C1 /* ImageCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCapture.m; sourceTree = "<group>"; };
+		8F11E5D0165626BA007328C1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8F11E5D2165626D3007328C1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8F11E5D41656305D007328C1 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		8F11E5D51656305D007328C1 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		8F11E5DB16575DE2007328C1 /* StatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusView.h; sourceTree = "<group>"; };
+		8F11E5DC16575DE2007328C1 /* StatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusView.m; sourceTree = "<group>"; };
+		8FC548711658872500BD93AA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8FD25F3E16639154009ACE86 /* icapture_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icapture_icon_57.png; path = ../icapture_icon_57.png; sourceTree = "<group>"; };
+		8FD25F4016639167009ACE86 /* icapture_icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icapture_icon_114.png; path = ../icapture_icon_114.png; sourceTree = "<group>"; };
+		8FD25F421663918D009ACE86 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		8FD25F46166391FE009ACE86 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F11E58516527D01007328C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC548721658872500BD93AA /* CoreMedia.framework in Frameworks */,
+				8F11E5D3165626D3007328C1 /* CoreVideo.framework in Frameworks */,
+				8F11E5D1165626BA007328C1 /* AVFoundation.framework in Frameworks */,
+				8F11E58D16527D01007328C1 /* UIKit.framework in Frameworks */,
+				8F11E58F16527D01007328C1 /* Foundation.framework in Frameworks */,
+				8F11E59116527D01007328C1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F11E57D16527D01007328C1 = {
+			isa = PBXGroup;
+			children = (
+				8F11E59216527D01007328C1 /* iCapture */,
+				8F11E58B16527D01007328C1 /* Frameworks */,
+				8F11E58916527D01007328C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F11E58916527D01007328C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F11E58816527D01007328C1 /* iCapture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F11E58B16527D01007328C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FC548711658872500BD93AA /* CoreMedia.framework */,
+				8F11E5D2165626D3007328C1 /* CoreVideo.framework */,
+				8F11E5D0165626BA007328C1 /* AVFoundation.framework */,
+				8F11E58C16527D01007328C1 /* UIKit.framework */,
+				8F11E58E16527D01007328C1 /* Foundation.framework */,
+				8F11E59016527D01007328C1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F11E59216527D01007328C1 /* iCapture */ = {
+			isa = PBXGroup;
+			children = (
+				8F11E5A416527D02007328C1 /* MainStoryboard.storyboard */,
+				8F11E5D716575D57007328C1 /* Status */,
+				8F11E5CF16562206007328C1 /* Utilities */,
+				8F11E5B816533B39007328C1 /* AppDelegate */,
+				8F11E5B716533B1C007328C1 /* FlipsideView */,
+				8F11E5B616533B09007328C1 /* MainView */,
+				8F11E59316527D01007328C1 /* Supporting Files */,
+			);
+			name = iCapture;
+			path = NerveVision;
+			sourceTree = "<group>";
+		};
+		8F11E59316527D01007328C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FD25F46166391FE009ACE86 /* Default.png */,
+				8FD25F421663918D009ACE86 /* Default@2x.png */,
+				8FD25F4016639167009ACE86 /* icapture_icon_114.png */,
+				8FD25F3E16639154009ACE86 /* icapture_icon_57.png */,
+				8F11E59416527D01007328C1 /* iCapture-Info.plist */,
+				8F11E59516527D01007328C1 /* InfoPlist.strings */,
+				8F11E59816527D01007328C1 /* main.m */,
+				8F11E59A16527D01007328C1 /* iCapture-Prefix.pch */,
+				8F11E5A216527D02007328C1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F11E5B616533B09007328C1 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				8F11E5A716527D02007328C1 /* MainViewController.h */,
+				8F11E5A816527D02007328C1 /* MainViewController.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		8F11E5B716533B1C007328C1 /* FlipsideView */ = {
+			isa = PBXGroup;
+			children = (
+				8F11E5AA16527D02007328C1 /* FlipsideViewController.h */,
+				8F11E5AB16527D02007328C1 /* FlipsideViewController.m */,
+			);
+			name = FlipsideView;
+			sourceTree = "<group>";
+		};
+		8F11E5B816533B39007328C1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8F11E59B16527D01007328C1 /* AppDelegate.h */,
+				8F11E59C16527D01007328C1 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8F11E5CF16562206007328C1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F11E5B916533B5A007328C1 /* NetworkHandler.h */,
+				8F11E5BA16533B5A007328C1 /* NetworkHandler.m */,
+				8F11E5BC16533B7F007328C1 /* ImageCapture.h */,
+				8F11E5BD16533B7F007328C1 /* ImageCapture.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		8F11E5D716575D57007328C1 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				8F11E5D41656305D007328C1 /* Status.h */,
+				8F11E5D51656305D007328C1 /* Status.m */,
+				8F11E5DB16575DE2007328C1 /* StatusView.h */,
+				8F11E5DC16575DE2007328C1 /* StatusView.m */,
+			);
+			name = Status;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F11E58716527D01007328C1 /* iCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F11E5AF16527D02007328C1 /* Build configuration list for PBXNativeTarget "iCapture" */;
+			buildPhases = (
+				8F11E58416527D01007328C1 /* Sources */,
+				8F11E58516527D01007328C1 /* Frameworks */,
+				8F11E58616527D01007328C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCapture;
+			productName = NerveVision;
+			productReference = 8F11E58816527D01007328C1 /* iCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F11E57F16527D01007328C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = bonemap;
+				TargetAttributes = {
+					8F11E58716527D01007328C1 = {
+						DevelopmentTeam = 25APANLK8N;
+					};
+				};
+			};
+			buildConfigurationList = 8F11E58216527D01007328C1 /* Build configuration list for PBXProject "iCapture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8F11E57D16527D01007328C1;
+			productRefGroup = 8F11E58916527D01007328C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F11E58716527D01007328C1 /* iCapture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F11E58616527D01007328C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F11E59716527D01007328C1 /* InfoPlist.strings in Resources */,
+				8F11E5A316527D02007328C1 /* Default-568h@2x.png in Resources */,
+				8F11E5A616527D02007328C1 /* MainStoryboard.storyboard in Resources */,
+				8FD25F3F16639154009ACE86 /* icapture_icon_57.png in Resources */,
+				8FD25F4116639168009ACE86 /* icapture_icon_114.png in Resources */,
+				8FD25F431663918D009ACE86 /* Default@2x.png in Resources */,
+				8FD25F47166391FE009ACE86 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F11E58416527D01007328C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F11E59916527D01007328C1 /* main.m in Sources */,
+				8F11E59D16527D01007328C1 /* AppDelegate.m in Sources */,
+				8F11E5A916527D02007328C1 /* MainViewController.m in Sources */,
+				8F11E5AC16527D02007328C1 /* FlipsideViewController.m in Sources */,
+				8F11E5BB16533B5A007328C1 /* NetworkHandler.m in Sources */,
+				8F11E5BE16533B7F007328C1 /* ImageCapture.m in Sources */,
+				8F11E5D61656305D007328C1 /* Status.m in Sources */,
+				8F11E5DD16575DE2007328C1 /* StatusView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F11E59516527D01007328C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F11E59616527D01007328C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8F11E5A416527D02007328C1 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F11E5A516527D02007328C1 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F11E5AD16527D02007328C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		8F11E5AE16527D02007328C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		8F11E5B016527D02007328C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NerveVision/iCapture-Prefix.pch";
+				INFOPLIST_FILE = "NerveVision/iCapture-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bonemap.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = iCapture;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8F11E5B116527D02007328C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NerveVision/iCapture-Prefix.pch";
+				INFOPLIST_FILE = "NerveVision/iCapture-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bonemap.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = iCapture;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F11E58216527D01007328C1 /* Build configuration list for PBXProject "iCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F11E5AD16527D02007328C1 /* Debug */,
+				8F11E5AE16527D02007328C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F11E5AF16527D02007328C1 /* Build configuration list for PBXNativeTarget "iCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F11E5B016527D02007328C1 /* Debug */,
+				8F11E5B116527D02007328C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F11E57F16527D01007328C1 /* Project object */;
+}
